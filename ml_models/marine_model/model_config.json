@@ -1,0 +1,8 @@
+{
+  "num_classes": 8,
+  "embedding_dim": 128,
+  "hidden_dim": 256,
+  "num_conv_layers": 3,
+  "dropout": 0.3,
+  "max_sequence_length": 1000
+}

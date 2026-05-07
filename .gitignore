@@ -1,0 +1,76 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Backend specific
+backend/data/uploads/*
+backend/data/results/*
+backend/logs/*.log
+!backend/data/uploads/.gitkeep
+!backend/data/results/.gitkeep
+
+# Environment variables
+.env
+.env.local
+backend/.env
+
+# ML Models (large files)
+*.pth
+*.h5
+ml_models/*/checkpoint_*.pth
+
+# Keep only the best model and config
+!ml_models/*/best_model.pth
+!ml_models/*/marine_model.h5
+!ml_models/*/*.json
+!ml_models/*/*.png
+
+# Training data (can be large)
+data/training/*/class_*/*.fasta
+!data/training/*/taxonomy.json
